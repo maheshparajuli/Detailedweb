@@ -511,7 +511,7 @@
   border-radius: 8px;
 }
 
-/* Remove underlines and add modern hover effects */
+
 .nav-link::before {
   content: '';
   position: absolute;
