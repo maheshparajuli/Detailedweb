@@ -1,0 +1,161 @@
+.about-section {
+  padding: 80px 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-bg {
+  width: 260px;
+  height: 260px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  opacity: 0.1;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 10;
+  border: 4px solid var(--primary);
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.dark-mode .about-title {
+  color: white;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.about-text {
+  color: var(--text-light);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.about-social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.about-social a {
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+
+.about-social a:hover {
+  color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .about-image-container {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .about-image-bg {
+    left: 0;
+    transform: none;
+  }
+
+  .about-content {
+    flex: 2;
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-buttons {
+    justify-content: flex-start;
+  }
+
+  .about-social {
+    justify-content: flex-start;
+  }
+}
