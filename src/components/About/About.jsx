@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { FiGithub, FiLinkedin, FiTwitter, FiDownload } from 'react-icons/fi'
 import './About.css'
-// import "./assets/viber_image_2025-05-22_15-44-43-982.jpg"
+
 
 const About = ({ id, setActiveSection }) => {
   useEffect(() => {
